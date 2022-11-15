@@ -3,6 +3,8 @@ include mixins/players
 
 block content 
   h2 This is Chelsea Page!
+  a(href="chelsea/upload") upload player
+  br
   each player in players 
     +player(player)
   a(href = '/chelsea/videos') video

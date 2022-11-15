@@ -1,0 +1,11 @@
+extends base.pug
+
+block content 
+  if errorMessage 
+    h2=errorMessage
+  h2=pageTitle
+  form(method= "POST")
+    input(name= "name", placeholder= "name", required)
+    input(name= "position", placeholder="position", required)
+    input(name="age", placeholder="age", required)
+    input(type="submit", value="upload")

@@ -1,0 +1,9 @@
+extends base.pug
+
+block content 
+  h2 Upload Chelsea Video 
+  form(method = "POST")
+    input(name="title", placeholder="Title", required)
+    input(name="description", placeholder="Description", required)
+    input(name="hashtags", placeholder="Hashtags, separated by comma.", required)
+    input(value= "upload", type ="submit")
