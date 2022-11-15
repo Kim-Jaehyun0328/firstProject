@@ -1,0 +1,10 @@
+extends base.pug
+include mixins/players
+
+block content
+  form(method = "POST")
+    input(name= "comment", placeholder = "Write your comment.", required)
+    input(value = "ok", type = "submit")
+    div
+      ul
+        +showComments(video)

@@ -1,0 +1,18 @@
+mixin player(info)
+  div 
+    h4 #{info.name}
+    ul
+      li #{info.position}
+      li #{info.age}
+
+mixin video(info)
+  div 
+    h4 
+      a(href=`videos/${info.id}`)=info.title
+    li #{info.rating}/5
+    li #{info.comments}    
+
+
+mixin showComments(info)
+  each comment in info.comments
+    li #{comment}

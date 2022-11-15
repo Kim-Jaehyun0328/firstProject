@@ -1,0 +1,10 @@
+extends base.pug
+include mixins/players
+
+block content
+  h2 This is ManUtd Page!
+  each player in players
+    +player(player)
+  a(href = '/manu/videos') video
+  br
+  a(href ='/manu/news') news
