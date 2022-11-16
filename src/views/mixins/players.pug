@@ -4,17 +4,18 @@ mixin player(info)
     ul
       li position: #{info.position}
       li age: #{info.age}
+  hr
 
 mixin video(info)
   div
     h4
-      a(href=`/videos/${info.id}`)=info.title
+      a(href=`/chelsea/videos/${info.id}`)=info.title
     ul
-      li #{info.meta.rating}/5
       li #{info.description}
       li posted #{info.createdAt}
       li #{info.hashtags}
-      li #{info.meta.views} views.
+  hr
+    
 
 
 mixin showComments(info)

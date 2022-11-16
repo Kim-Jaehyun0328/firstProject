@@ -1,6 +1,8 @@
 extends base.pug
 
 block content 
+  if errorMessage 
+    h4=errorMessage
   h2 Upload Chelsea Video 
   form(method = "POST")
     input(name="title", placeholder="Title", required)

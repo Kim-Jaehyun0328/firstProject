@@ -1,0 +1,9 @@
+extends base.pug
+include mixins/players
+
+block content 
+  form(method = "GET")
+    input(name = "keyword", type="text", placeholder = "Write what you search")
+    input(type="submit", value = "search")
+  each video in videos 
+    +video(video)

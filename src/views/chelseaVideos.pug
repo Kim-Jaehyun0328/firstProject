@@ -3,6 +3,11 @@ include mixins/players
 
 block content
   h2 Chelsea Video List
-  a(href = "videos/upload") upload video
+  nav
+    ul 
+      li
+        a(href = "/chelsea/videos/upload") upload video
+      li
+        a(href = "/chelsea/videos/search") search video
   each video in videos
     +video(video)

@@ -1,0 +1,8 @@
+extends base.pug
+
+block content
+  form(method = "POST")
+    input(name= "title", value = video.title, required)
+    input(name = "description", value = video.description, required)
+    input(name = "hashtags", value = video.hashtags.join(), required)
+    input(type = "submit", value = "Edit video")
